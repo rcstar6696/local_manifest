@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Please do not manually edit this file-->
+<manifest>         
+   <remote  name="Sony-Stock-CM"
+           fetch="https://github.com/Sony-Stock-CM/" />
+           
+           <remote  name="rcstar6696"
+           fetch="https://github.com/rcstar6696/" />
+           
+           <remote  name="git"
+           fetch="https://github.com/" />
+           
+  <!-- kernel 3.4 -->
+	<project name="android_kernel_sony_msm8974" path="kernel/sony/msm8974" remote="rcstar6696" revision="lineage" />
+	
+  <!-- msm8974 -->
+	<project name="android_device_sony_msm8974-common" path="device/sony/msm8974-common" remote="rcstar6696" revision="lineage" />
+
+  <!-- shinano -->
+	<project name="android_device_sony_shinano-common" path="device/sony/shinano-common" remote="rcstar6696" revision="lineage" />
+  
+  <!-- shinanoAB -->
+	<project name="android_device_sony_sirius" path="device/sony/sirius" remote="rcstar6696" revision="lineage" />
+	<project name="android_device_sony_castor_windy" path="device/sony/castor_windy" remote="rcstar6696" revision="lineage" />
+
+  <!-- sony common -->
+	<project name="LineageOS/android_device_sony_common" path="device/sony/common" remote="github" />
+	<project name="LineageOS/android_hardware_sony_thermanager" path="hardware/sony/thermanager" remote="github" />
+	<project name="LineageOS/android_hardware_sony_macaddrsetup" path="hardware/sony/macaddrsetup" remote="github" />	
+	<project name="LineageOS/android_hardware_broadcom_fm" path="hardware/broadcom/fm" remote="github" />
+
+  <!-- qcom common -->
+	<project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" />
+	
+  <!-- vendor -->
+	<project name="proprietary_vendor_sony" path="vendor/sony" remote="rcstar6696" revision="lineage" />
+	<project name="android_vendor_rcstar6696" path="vendor/rcstar6696" remote="rcstar6696" revision="lineage" />
+
+  <!-- common -->
+	<project name="LineageOS/android_external_stlport" path="external/stlport" />
+	<project name="LineageOS/android_external_busybox" path="external/busybox" remote="github" />
+	
+  <!-- TWRP -->
+	<remove-project name="LineageOS/android_bootable_recovery" />
+	<project name="android_bootable_recovery" path="bootable/recovery" remote="rcstar6696" revision="lineage" />
+
+  <!--Theme -->
+	<project name="luk1337/android_vendor_extra" path="vendor/extra" remote="git" revision="cm-14.1-rootless" />
+	<project name="substratum/interfacer" path="packages/apps/ThemeInterfacer" remote="git" revision="n-rootless" />
+
+</manifest>
